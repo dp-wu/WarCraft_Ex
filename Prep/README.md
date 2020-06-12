@@ -1,4 +1,4 @@
-*Description:*
+## **Description:**
 
 There are two tribes in the world. The headquarter of Red tribe is in the west of the world and the Blue tribe’s is in the east. There are n cities between these two headquarters, denoted as:
 Red headquarter -City 1 - City 2 - City 3, …  - City n -Blue headquarter
@@ -33,7 +33,7 @@ If the headquarter doesn’t have the enough strength to create the present warr
 
  
 
-*Requirement:*
+## **Requirement:**
 
 When the time and the initial strength of two headquarters are given, you need to list every event of two headquarters after 0:00.
 
@@ -57,13 +57,17 @@ When you list the events, it should output in chronological order. If some event
 
  
 
-*Input:*
+## **I/O:**
+
+
+***Input:***
 The first line is an integer, it means the number of test cases.
 For every case:
 The first line is an integer M, it means the initial strength of the two headquarters.
 The second line are the strength of dragon, ninja, iceman, lion, wolf.
 
-*Output:*
+
+***Output:***
 For every case:
 You need to output every event starting from 0:00 until the two headquarters stop creating warriors.
 First output “Case:n”, n is the number of the case, n is starting from 1 (The total number of cases is given in the first line of input).
