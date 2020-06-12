@@ -1,6 +1,6 @@
 ## **Description:**
 
-There are two tribes in the world. The headquarter of Red tribe is in the west of the world and the Blue tribe’s is in the east. There are n cities between these two headquarters, denoted as:
+There are two tribes in the world. The headquarter of Red tribe is in the west of the world and the Blue tribe’s is in the east. There are n cities between these two headquarters, denoted as: <br />
 Red headquarter -City 1 - City 2 - City 3, …  - City n -Blue headquarter
 
  
