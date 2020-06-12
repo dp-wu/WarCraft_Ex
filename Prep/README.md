@@ -1,7 +1,7 @@
 ## **Description:**
 
 There are two tribes in the world. The headquarter of Red tribe is in the west of the world and the Blue tribe’s is in the east. There are n cities between these two headquarters, denoted as: <br />
-*Red headquarter -City 1 - City 2 - City 3, …  - City n -Blue headquarter* <br />
+    ***Red headquarter -City 1 - City 2 - City 3, …  - City n -Blue headquarter*** <br />
 <br />
 Headquarters can create warriors. There are five types of warriorsin total. They are dragon, ninja,iceman, lion, wolf. Every warrior has three properties: Number, strength, Attack. <br />
 <br />
@@ -10,9 +10,7 @@ In each headquarter, the Number of warriors starts from 1. For example, The Numb
 Every warrior is born with a strength. <br />
 <br />
 In every integral point, each headquarter will create a new warrior. <br />
-
 The order of warrior creation in Red headquarter: iceman, lion, wolf, ninja, dragon. <br />
-
 The order of warrior creation in Blue headquarter: lion, dragon, ninja, iceman, wolf. <br />
 <br />
 The creation of a warrior will consume the strength of the headquarter. For example, if the Blue headquarter made a warrior with m strength, then the strength of the Blue headquarter will reduce m. <br />
@@ -25,10 +23,10 @@ If the headquarter doesn’t have the enough strength to create the present warr
 
 When the time and the initial strength of two headquarters are given, you need to list every event of two headquarters after 0:00. <br />
 There are two types of events: <br />
-*(1)  A warrior is born* <br />
+***(1)  A warrior is born*** <br />
 Sample:  004 blue lion 5 bornwith strength 5,2 lion in red headquarter <br />
 It means in 4:00, a lion was born in red headquarter, his Number is 5 and strength is 5. Now, there are 2 lions in the red headquarter.(notice: do not use plural form, for example it is 2 lionnot 2 lions) <br />
-*(2)  headquarter stops making warriors* <br />
+***(2)  headquarter stops making warriors*** <br />
 Sample: 010 red headquarter stops making warriors <br />
 It means in 10:00, the red headquarter stops making warriors <br />
 <br />
