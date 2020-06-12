@@ -1,3 +1,7 @@
+## **Source:**
+This is one of the OJ project: http://cxsjsxmooc.openjudge.cn/2020t3spring3/005/?lang=en_US
+
+
 ## **Description:**
 
 There are two tribes in the world. The headquarter of Red tribe is in the west of the world and the Blue tribe’s is in the east. There are n cities between these two headquarters, denoted as: <br />
