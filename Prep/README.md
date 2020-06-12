@@ -49,3 +49,25 @@ For every case:<br />
 You need to output every event starting from 0:00 until the two headquarters stop creating warriors.<br />
 First output “Case:n”, n is the number of the case, n is starting from 1 (The total number of cases is given in the first line of input).<br />
 Every event start with the timing, the timing is three-digit number (there is no 24 hours limited).<br />
+<br />
+
+## **Sample I/O:**
+***Input:***
+```
+1
+20
+3 4 5 6 7
+```
+***Output:***
+```
+Case:1
+000 red iceman 1 born with strength 5,1 iceman in red headquarter
+000 blue lion 1 born with strength 6,1 lion in blue headquarter
+001 red lion 2 born with strength 6,1 lion in red headquarter
+001 blue dragon 2 born with strength 3,1 dragon in blue headquarter
+002 red wolf 3 born with strength 7,1 wolf in red headquarter
+002 blue ninja 3 born with strength 4,1 ninja in blue headquarter
+003 red headquarter stops making warriors
+003 blue iceman 4 born with strength 5,1 iceman in blue headquarter
+004 blue headquarter stops making warriors
+```
