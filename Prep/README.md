@@ -31,7 +31,7 @@ If the headquarter doesn’t have the enough strength to create the present warr
 When the time and the initial strength of two headquarters are given, you need to list every event of two headquarters after 0:00. <br />
 There are two types of events: <br />
 ***(1)  A warrior is born*** <br />
-Sample:  004 blue lion 5 bornwith strength 5,2 lion in red headquarter <br />
+Sample:  004 blue lion 5 bornwith strength 5,2 lion in red headquarter <br /> (***I think this place should be "2 lion in BLUE hq" instead of red.***) 
 It means in 4:00, a lion was born in red headquarter, his Number is 5 and strength is 5. Now, there are 2 lions in the red headquarter.(notice: do not use plural form, for example it is 2 lionnot 2 lions) <br />
 ***(2)  headquarter stops making warriors*** <br />
 Sample: 010 red headquarter stops making warriors <br />
