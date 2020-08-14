@@ -1,8 +1,7 @@
-/* preparation */
 #include <iostream>
 #include <iomanip>
-using namespace std;
 
+using namespace std;
 const int WARRIOR_TYPES = 5; // number of types of different warriors
 const string RED_ORDER[] = { "iceman", "lion", "wolf", "ninja", "dragon" };
 const string BLUE_ORDER[] = { "lion", "dragon", "ninja", "iceman", "wolf" };
@@ -92,50 +91,30 @@ int main() {
 		Base b(BLUE_ORDER, init_hp, M);
 
 		// start game
-		do {
-			if (r.terminate_game && b.terminate_game) game.game_end = true;
-			else {
-				if (!r.terminate_game && !b.terminate_game) {
-					cout << setw(3) << setfill('0') << game.time;
-					r.create_warrior();
-					if (r.terminate_game) cout << " red headquarter stops making warriors" << endl;
-					else {
-						cout << " red " << r.w.name << " " << r.id << " born with strength " << r.w.strength << ",";
-						cout << r.w.count << " " << r.w.name << " in red headquarter" << endl;
-					}
-
-					cout << setw(3) << setfill('0') << game.time;
-					b.create_warrior();
-					if (b.terminate_game) cout << " blue headquarter stops making warriors" << endl;
-					else {
-						cout << " blue " << b.w.name << " " << b.id << " born with strength " << b.w.strength << ",";
-						cout << b.w.count << " " << b.w.name << " in blue headquarter" << endl;
-					}
-				}
-				else if (!r.terminate_game && b.terminate_game) {
-					cout << setw(3) << setfill('0') << game.time;
-					r.create_warrior();
-					if (r.terminate_game) cout << " red headquarter stops making warriors" << endl;
-					else {
-						cout << " red " << r.w.name << " " << r.id << " born with strength " << r.w.strength << ",";
-						cout << r.w.count << " " << r.w.name << " in red headquarter" << endl;
-					}
-				}
-				else if (r.terminate_game && !b.terminate_game) {
-					cout << setw(3) << setfill('0') << game.time;
-					b.create_warrior();
-					if (b.terminate_game) cout << " blue headquarter stops making warriors" << endl;
-					else {
-						cout << " blue " << b.w.name << " " << b.id << " born with strength " << b.w.strength << ",";
-						cout << b.w.count << " " << b.w.name << " in red headquarter" << endl;
-					}
+		for (game.time = 0; !r.terminate_game || !b.terminate_game; ++game.time) {
+			if (!r.terminate_game) {
+				r.create_warrior();
+				cout << setw(3) << setfill('0') << game.time;
+				if (r.terminate_game) cout << " red headquarter stops making warriors" << endl;
+				else {
+					cout << " red " << r.w.name << " " << r.id << " born with strength " << r.w.strength << ",";
+					cout << r.w.count << " " << r.w.name << " in red headquarter" << endl;
 				}
 			}
-			++game.time;
-		} while (!game.game_end);
+
+			if (!b.terminate_game) {
+				b.create_warrior();
+				cout << setw(3) << setfill('0') << game.time;
+				if (b.terminate_game) cout << " blue headquarter stops making warriors" << endl;
+				else {
+					cout << " blue " << b.w.name << " " << b.id << " born with strength " << b.w.strength << ",";
+					cout << b.w.count << " " << b.w.name << " in blue headquarter" << endl;
+				}
+			}
+		}
+		game.game_end = true;
 
 		++case_counter;
-		game.time = 0;
 	} while (case_counter <= n_cases);
 
 	return 0;
