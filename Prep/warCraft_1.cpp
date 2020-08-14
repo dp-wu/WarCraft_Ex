@@ -1,8 +1,8 @@
 /* preparation */
 #include <iostream>
-#include <stdio.h>
 #include <iomanip>
 using namespace std;
+
 const int WARRIOR_TYPES = 5; // number of types of different warriors
 const string RED_ORDER[] = { "iceman", "lion", "wolf", "ninja", "dragon" };
 const string BLUE_ORDER[] = { "lion", "dragon", "ninja", "iceman", "wolf" };
@@ -109,7 +109,7 @@ int main() {
 					if (b.terminate_game) cout << " blue headquarter stops making warriors" << endl;
 					else {
 						cout << " blue " << b.w.name << " " << b.id << " born with strength " << b.w.strength << ",";
-						cout << b.w.count << " " << b.w.name << " in red headquarter" << endl;
+						cout << b.w.count << " " << b.w.name << " in blue headquarter" << endl;
 					}
 				}
 				else if (!r.terminate_game && b.terminate_game) {
