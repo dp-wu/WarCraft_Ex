@@ -47,12 +47,7 @@ public:
         weapon = weapons[ind%WEAPON_TYPES];
         morale = (double) HQ_strength / strength;
     }
-
-    void set_value(string tm, string n, int s, int h, int tw){
-        Warrior::team = tm;
-        weapon = weapons[ind%WEAPON_TYPES];
-        morale = (double) HQ_strength / strength;
-    }
+    
     virtual void print_feature() {
         print_common();
         cout << "It has a " << weapon << ",and it's morale is " << fixed << setprecision(2) << morale << endl;
